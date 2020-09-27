@@ -1,0 +1,185 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  animation-duration: 3s;
+  animation-name: slide;
+  animation-iteration-count: infinite;
+}
+
+.nav-sticky {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(5, 5, 5);
+  z-index: 100;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(7px);
+  }
+  25% {
+    transform: translateY(-7px);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(7px);
+  }
+}
+
+/* .title:hover .border-bottom {
+  transition: all 1s ease;
+  transform: scaleX(1.5);
+} */
+
+.logo-img {
+  transition: all 1s linear;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.logo-img:hover {
+  transform: rotate(360deg);
+}
+.toggle-checkbox {
+  transition: 0.2s;
+}
+.toggle-checkbox:checked {
+  /* right: 0; */
+  border-color: #68d391;
+  transition: 0.2s;
+  transform: translateX(1rem);
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #68d391;
+  transition: 0.2s;
+}
+
+.toggle-checkbox:focus {
+  outline: none;
+}
+
+/* dark mode */
+html[data-theme="light"] {
+  color: rgb(5, 5, 5) !important;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 5px 5px 10px #eee;
+}
+
+html[data-theme="dark"] {
+  color: aliceblue !important;
+  background-color: rgb(5, 5, 5);
+  box-shadow: 5px 5px 10px #667eeaad;
+}
+
+/* project cards */
+.project-card .card-image {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.project-card:hover {
+  box-shadow: 5px 5px 10px #667eeaad;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+  transform: scale(1.01);
+}
+
+/* owl carousel */
+.owl-stage-outer {
+  /* height: 80vh; */
+  padding: 1rem 0;
+  position: relative;
+}
+
+.navi-btn {
+  color: #3b51b5;
+}
+
+.navi-btn.left {
+  position: absolute;
+  left: -2.5%;
+  top: 40%;
+}
+.navi-btn.right {
+  position: absolute;
+  right: -2.5%;
+  top: 40%;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: inherit !important;
+}
+
+.owl-dot span {
+  /* height: 0.75rem !important;
+  width: 0.75rem !important; */
+  outline: none;
+}
+.owl-dot.active span {
+  background-color: #3b51b5 !important;
+}
+
+.owl-prev.disabled,
+.owl-next.disabled {
+  display: none !important;
+}
+
+.madewithlove .fa-heart {
+  color: red;
+  animation-duration: 1s;
+  animation-name: heart;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.15);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fa.theme-icons {
+  animation-duration: 1s;
+  animation-name: theme-icons-fade;
+}
+
+@keyframes theme-icons-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* footer icons */
+.social-icons {
+  cursor: pointer;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-envelope-o {
+  color: #c03b2b;
+}
+
+.h-75 {
+  height: 75vh !important;
+}
