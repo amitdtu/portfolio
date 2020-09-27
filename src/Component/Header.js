@@ -3,12 +3,31 @@ import reactLogo from "./../assets/images/react.svg";
 import CV from "./../assets/images/cv.pdf";
 import "./../assets/hero.css";
 import { detectMobile } from "./../Common/HelperFunctions";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+
 export default class Header extends Component {
   state = {
     isDark: false,
   };
 
   componentDidMount() {
+    Events.scrollEvent.register("begin", function () {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register("end", function () {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+
     localStorage.setItem("theme", "dark");
     this.setState({
       isDark: true,
@@ -62,17 +81,40 @@ export default class Header extends Component {
             {/* <a className="mr-5 hover: cursor-pointer">First Link</a>
             <a className="mr-5 hover: cursor-pointer">Second Link</a>
             <a className="mr-5 hover: cursor-pointer">Third Link</a> */}
-
-            <a href="#projects" className="mr-5 ">
+            <Link
+              className="mr-5 cursor-pointer"
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              // offset={50}
+              duration={100}
+              // onSetActive={this.handleSetActive}
+            >
               Projects
-            </a>
-            <a
+            </Link>
+            <Link
+              className="mr-5 cursor-pointer"
+              activeClass="active"
+              to="stats"
+              spy={true}
+              smooth={true}
+              // offset={50}
+              duration={100}
+              // onSetActive={this.handleSetActive}
+            >
+              Statistics
+            </Link>
+            {/* <a href="#projects" className="mr-5 ">
+              Projects
+            </a> */}
+            {/* <a
               href={"#stats"}
               // onClick={this.handleClick.bind(this, 610, 950)}
               className="mr-5 cursor-pointer"
             >
               Statistics
-            </a>
+            </a> */}
             <a href={CV} download="resume" className="mr-5 ">
               Resume
             </a>
