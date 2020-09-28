@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.3b3f206d.chunk.css",
-    "main.js": "/portfolio/static/js/main.b42ca2e8.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.b42ca2e8.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.e7e91145.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e7e91145.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
     "static/css/2.828be9a0.chunk.css": "/portfolio/static/css/2.828be9a0.chunk.css",
-    "static/js/2.da0fd27a.chunk.js": "/portfolio/static/js/2.da0fd27a.chunk.js",
-    "static/js/2.da0fd27a.chunk.js.map": "/portfolio/static/js/2.da0fd27a.chunk.js.map",
+    "static/js/2.349a373c.chunk.js": "/portfolio/static/js/2.349a373c.chunk.js",
+    "static/js/2.349a373c.chunk.js.map": "/portfolio/static/js/2.349a373c.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.2260ce5aabbf6ed5b5b9661cc8aefbde.js": "/portfolio/precache-manifest.2260ce5aabbf6ed5b5b9661cc8aefbde.js",
+    "precache-manifest.f32939027414e941adc55b7a1c5402a5.js": "/portfolio/precache-manifest.f32939027414e941adc55b7a1c5402a5.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.828be9a0.chunk.css.map": "/portfolio/static/css/2.828be9a0.chunk.css.map",
     "static/css/main.3b3f206d.chunk.css.map": "/portfolio/static/css/main.3b3f206d.chunk.css.map",
-    "static/js/2.da0fd27a.chunk.js.LICENSE.txt": "/portfolio/static/js/2.da0fd27a.chunk.js.LICENSE.txt",
+    "static/js/2.349a373c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.349a373c.chunk.js.LICENSE.txt",
     "static/media/blog.jpg": "/portfolio/static/media/blog.532c41d4.jpg",
     "static/media/coronavirus.svg": "/portfolio/static/media/coronavirus.eda24fd4.svg",
     "static/media/cv.pdf": "/portfolio/static/media/cv.1f1ff66a.pdf",
+    "static/media/demo.gif": "/portfolio/static/media/demo.cb5a0d40.gif",
     "static/media/gmail.svg": "/portfolio/static/media/gmail.e20767db.svg",
     "static/media/hero.png": "/portfolio/static/media/hero.5cbeb8fc.png",
     "static/media/hero2.png": "/portfolio/static/media/hero2.0ca8dc28.png",
@@ -29,8 +30,8 @@
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
     "static/css/2.828be9a0.chunk.css",
-    "static/js/2.da0fd27a.chunk.js",
+    "static/js/2.349a373c.chunk.js",
     "static/css/main.3b3f206d.chunk.css",
-    "static/js/main.b42ca2e8.chunk.js"
+    "static/js/main.e7e91145.chunk.js"
   ]
 }
