@@ -30,11 +30,7 @@ html {
   }
 }
 
-/* .title:hover .border-bottom {
-  transition: all 1s ease;
-  transform: scaleX(1.5);
-} */
-
+/* logo */
 .logo-img {
   transition: all 1s linear;
   height: 50px;
@@ -45,11 +41,12 @@ html {
 .logo-img:hover {
   transform: rotate(360deg);
 }
+
+/* toggler */
 .toggle-checkbox {
   transition: 0.2s;
 }
 .toggle-checkbox:checked {
-  /* right: 0; */
   border-color: #68d391;
   transition: 0.2s;
   transform: translateX(1rem);
@@ -61,6 +58,20 @@ html {
 
 .toggle-checkbox:focus {
   outline: none;
+}
+
+.fa.theme-icons {
+  animation-duration: 1s;
+  animation-name: theme-icons-fade;
+}
+
+@keyframes theme-icons-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* dark mode */
@@ -75,6 +86,11 @@ html[data-theme="dark"] {
   background-color: rgb(5, 5, 5);
   box-shadow: 5px 5px 10px #667eeaad;
 }
+
+/* html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder {
+  color: #ccc;
+} */
 
 /* project cards */
 .project-card .card-image {
@@ -93,7 +109,6 @@ html[data-theme="dark"] {
 
 /* owl carousel */
 .owl-stage-outer {
-  /* height: 80vh; */
   padding: 1rem 0;
   position: relative;
 }
@@ -118,8 +133,6 @@ html[data-theme="dark"] {
 }
 
 .owl-dot span {
-  /* height: 0.75rem !important;
-  width: 0.75rem !important; */
   outline: none;
 }
 .owl-dot.active span {
@@ -130,6 +143,8 @@ html[data-theme="dark"] {
 .owl-next.disabled {
   display: none !important;
 }
+
+/* heart icon */
 
 .madewithlove .fa-heart {
   color: red;
@@ -153,20 +168,6 @@ html[data-theme="dark"] {
   }
 }
 
-.fa.theme-icons {
-  animation-duration: 1s;
-  animation-name: theme-icons-fade;
-}
-
-@keyframes theme-icons-fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* footer icons */
 .social-icons {
   cursor: pointer;
@@ -183,3 +184,22 @@ html[data-theme="dark"] {
 .h-75 {
   height: 75vh !important;
 }
+
+/* tostify react */
+/* .Toastify__progress-bar--default {
+  background: #667eea !important;
+} */
+
+/* .Toastify__toast--default {
+  color: black;
+}
+
+.Toastify__toast-container {
+  min-width: 30vw !important;
+  max-width: 60vw !important;
+  width: unset !important;
+}
+
+.progress-danger .Toastify__progress-bar--default {
+  background: #e74c3c !important;
+} */

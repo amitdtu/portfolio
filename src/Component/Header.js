@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import reactLogo from "./../assets/images/react.svg";
 import CV from "./../assets/images/cv.pdf";
-import "./../assets/hero.css";
+import "./../assets/custom.css";
 import { detectMobile } from "./../Common/HelperFunctions";
 import {
   Link,
@@ -13,25 +13,26 @@ import {
 } from "react-scroll";
 
 export default class Header extends Component {
-  state = {
-    isDark: false,
-  };
+  // state = {
+  //   isDark: false,
+  // };
 
   componentDidMount() {
     Events.scrollEvent.register("begin", function () {
-      console.log("begin", arguments);
+      // console.log("begin", arguments);
     });
 
     Events.scrollEvent.register("end", function () {
-      console.log("end", arguments);
+      // console.log("end", arguments);
     });
 
     scrollSpy.update();
 
     localStorage.setItem("theme", "dark");
-    this.setState({
-      isDark: true,
-    });
+    this.props.setAppState({ isDark: true });
+    // this.setState({
+    //   isDark: true,
+    // });
 
     document.getElementsByTagName("HTML")[0].setAttribute("data-theme", "dark");
     document.getElementById("toggle").checked = true;
@@ -44,43 +45,58 @@ export default class Header extends Component {
         .getElementsByTagName("HTML")[0]
         .setAttribute("data-theme", "dark");
       localStorage.setItem("theme", "dark");
-      this.setState({ isDark: true });
+      // this.setState({ isDark: true });
+      this.props.setAppState({ isDark: true });
     } else {
       document
         .getElementsByTagName("HTML")[0]
         .setAttribute("data-theme", "light");
       localStorage.setItem("theme", "light");
-      this.setState({ isDark: false });
+      // this.setState({ isDark: false });
+      this.props.setAppState({ isDark: false });
     }
-    console.log(name, checked);
-  };
-
-  handleClick = (y1, y2) => {
-    // y1 = desktop y-axis co-ordinated
-    // y2 = mobile y-axis co-ordinated
-    if (!detectMobile()) {
-      window.scrollTo(0, y1);
-    } else {
-      window.scrollTo(0, y2);
-    }
+    // console.log(name, checked);
   };
 
   render() {
-    const { isDark } = this.state;
+    const { isDark } = this.props;
     return (
       <header
         className=" body-font nav-sticky"
         style={{ backgroundColor: isDark ? "" : "white" }}
       >
-        <div className="container mx-auto flex flex-wrap md:p-5 sm:p-0 lg:p-5 p-2 flex-col md:flex-row items-center">
-          <a className="flex title-font font-medium items-center md:mb-0">
-            <img src={reactLogo} alt="" className="logo-img" />
-            <span className="ml-3 text-xl">Amit Kumar</span>
-          </a>
+        <div className="container mx-auto flex flex-wrap md:p-4 sm:p-0 lg:p-4 p-2 flex-col md:flex-row items-center">
+          <Link
+            className="mr-5 cursor-pointer"
+            activeClass="active"
+            to="hero"
+            spy={true}
+            smooth={true}
+            // offset={50}
+            duration={100}
+            // onSetActive={this.handleSetActive}
+          >
+            <a className="flex title-font font-medium items-center md:mb-0">
+              <img src={reactLogo} alt="" className="logo-img" />
+              <span className="ml-3 text-xl">Amit Kumar</span>
+            </a>
+          </Link>
           <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
             {/* <a className="mr-5 hover: cursor-pointer">First Link</a>
             <a className="mr-5 hover: cursor-pointer">Second Link</a>
             <a className="mr-5 hover: cursor-pointer">Third Link</a> */}
+            <Link
+              className="mr-5 cursor-pointer"
+              activeClass="active"
+              to="stats"
+              spy={true}
+              smooth={true}
+              // offset={50}
+              duration={100}
+              // onSetActive={this.handleSetActive}
+            >
+              Statistics
+            </Link>
             <Link
               className="mr-5 cursor-pointer"
               activeClass="active"
@@ -96,15 +112,16 @@ export default class Header extends Component {
             <Link
               className="mr-5 cursor-pointer"
               activeClass="active"
-              to="stats"
+              to="contactMe"
               spy={true}
               smooth={true}
               // offset={50}
               duration={100}
               // onSetActive={this.handleSetActive}
             >
-              Statistics
+              Contact
             </Link>
+
             {/* <a href="#projects" className="mr-5 ">
               Projects
             </a> */}

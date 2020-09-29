@@ -1,17 +1,22 @@
 import React, { Component } from "react";
 import "./App.css";
-import "./assets/hero.css";
+import "./assets/custom.css";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import HomePage from "./Container/HomePage";
-import Login from "./Container/Login";
 import Header from "./Component/Header";
 
 class App extends Component {
+  state = {
+    isDark: true,
+  };
+  setAppState = (obj) => {
+    this.setState(obj);
+  };
   render() {
     return (
       <>
-        <Header />
-        <HomePage />
+        <Header setAppState={this.setAppState} {...this.state} />
+        <HomePage {...this.state} />
       </>
     );
   }

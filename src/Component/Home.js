@@ -3,6 +3,7 @@ import Typist from "react-typist"; // to be uninstall
 import Stats from "./Stats";
 import Hero from "./Hero";
 import ProjectCards from "./ProjectCards";
+import ContactMe from "./ContactMe";
 import Footer from "./Footer";
 import {
   Link,
@@ -27,13 +28,19 @@ export default class Home extends Component {
   render() {
     return (
       <div className="">
-        <Hero />
+        <Element name="hero" className="element">
+          <Hero />
+        </Element>
         <Element name="stats" className="element">
           <Stats isHeroMounted={this.state.isHeroMounted} />
         </Element>
         <Element name="projects" className="element">
           <ProjectCards />
         </Element>
+        <Element name="contactMe" className="element">
+          <ContactMe {...this.props} />
+        </Element>
+
         <Footer />
       </div>
     );
