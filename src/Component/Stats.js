@@ -23,7 +23,8 @@ export default class Stats extends Component {
           return;
         } else {
           let count = Math.floor(obj.limit / 100);
-          if (obj.limit > 10000) count = Math.floor(obj.limit / 25);
+          if (obj.limit > 10000) count = Math.floor(obj.limit / 35);
+          else if (obj.limit > 25000) count = Math.floor(obj.limit / 25);
           count = count > 0 ? count : 1;
           this.setState((prevState, props) => ({
             [obj.state]: prevState[obj.state] + count,
@@ -40,10 +41,10 @@ export default class Stats extends Component {
         when={this.props.isHeroMounted}
         onReveal={() =>
           this.handleCounter([
-            { state: "linesOfCode", limit: 40000 },
-            { state: "noOfClients", limit: 3 },
-            { state: "noOfProjects", limit: 12 },
-            { state: "noOfCoffee", limit: 1563 },
+            { state: "linesOfCode", limit: 25000 },
+            { state: "noOfClients", limit: 4 },
+            { state: "noOfProjects", limit: 8 },
+            { state: "noOfCoffee", limit: 1283 },
           ])
         }
       >
@@ -73,7 +74,7 @@ export default class Stats extends Component {
                   ></i>
                   <h2 className="title-font font-medium text-3xl ">
                     {this.state.linesOfCode}
-                    {this.state.linesOfCode >= 40000 ? "+" : null}
+                    {this.state.linesOfCode >= 25000 ? "+" : null}
                   </h2>
                   <p className="leading-relaxed">Lines of Code</p>
                 </div>

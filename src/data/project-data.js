@@ -4,7 +4,7 @@ export const projects = [
     type: "Internship",
     url: "https://www.ymgrad.com/",
     info:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "A Platform which provides service to students to get admission in abroad for their higher education.",
     imageName: "ymgrad.png",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     type: "Internship",
     url: "https://pracify.com/",
     info:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "A bridge for both freelancer and company. Hire or do some freelance work and get paid for it.",
     imageName: "pracify.png",
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     type: "Job",
     url: "https://getcreator.in/",
     info:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "Freelancing website specially build for graphic designers includes chat and payment integration.",
     imageName: "indiefolio.png",
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     type: "Personal",
     url: "https://github.com/amitdtu/covid19-tacker",
     info:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "A website build in lockdown to track codvid-19 cases across the world with Chart JS.",
     imageName: "coronavirus.svg",
   },
   {
@@ -36,7 +36,7 @@ export const projects = [
     type: "Personal",
     url: "https://github.com/amitdtu/blog-forntend",
     info:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "A full stack MERN website where you can write your blogs and share with your friends.",
     imageName: "blog.jpg",
   },
 ];

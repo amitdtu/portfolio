@@ -18,6 +18,8 @@ export default class Hero extends Component {
                       "<span style='color: #e54c21'>HTML</span>",
                       "<span style='color: #2189c6'>CSS</span>",
                       "<span style='color: #fbd601'>JavaScript</span>",
+                      "<span style='color: #563d7c'>Bootstrap</span>",
+                      "<span style='color: #1284ff'>Ant Design</span>",
                       "<span style='color: #61dafb'>React</span>",
                       "<span style='color: #43853d'>Node JS</span>",
                       "<span style='color: #ccc'>Express</span>",

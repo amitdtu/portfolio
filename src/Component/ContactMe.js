@@ -80,7 +80,13 @@ class ContactMe extends Component {
             {/* <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 ">
               Contact Me
             </h1> */}
-            <Title>Contact Me</Title>
+            <Title subtitle="">
+              Contact Me
+              <p class="lg:w-2/3 font-normal mx-auto leading-relaxed text-base">
+                Always want to work with awesome ideas.
+              </p>
+            </Title>
+
             {/* <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
               gentrify.

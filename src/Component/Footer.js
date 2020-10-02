@@ -11,9 +11,10 @@ export default class Footer extends Component {
               <img src={reactLogo} alt="" className="logo-img" />
               <span className="ml-3 text-xl">Amit Kumar</span>
             </a> */}
-            <p className="text-sm font-semibold   mt-4">
-              No © copyright issues
-            </p>
+            <div className="text-sm font-semibold mt-4">
+              <p>No © copyright issues.</p>
+              <p>Feel free to copy.</p>
+            </div>
             <p class="madewithlove mt-3">
               Made with <i className="fa fa-heart mx-1"></i> in India
             </p>
@@ -21,18 +22,18 @@ export default class Footer extends Component {
               <a
                 href="https://github.com/amitdtu"
                 target="_blank"
-                className="ml-4"
+                className="ml-5"
               >
                 <i class="fa fa-github fa-2x" aria-hidden="true"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/amitdtu/"
                 target="_blank"
-                className="ml-4 "
+                className="ml-5 "
               >
                 <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
               </a>
-              <a href="mailto: amitdtu007@gmail.com" className="ml-4 ">
+              <a href="mailto: amitdtu007@gmail.com" className="ml-5 ">
                 <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
               </a>
             </span>

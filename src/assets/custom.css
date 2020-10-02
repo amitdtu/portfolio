@@ -148,7 +148,7 @@ html[data-theme="dark"] textarea::placeholder {
 
 .madewithlove .fa-heart {
   color: red;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
   animation-name: heart;
   animation-iteration-count: infinite;
 }
