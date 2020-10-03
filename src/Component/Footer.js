@@ -22,18 +22,18 @@ export default class Footer extends Component {
               <a
                 href="https://github.com/amitdtu"
                 target="_blank"
-                className="ml-5"
+                className="mx-3"
               >
                 <i class="fa fa-github fa-2x" aria-hidden="true"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/amitdtu/"
                 target="_blank"
-                className="ml-5 "
+                className="mx-3"
               >
                 <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
               </a>
-              <a href="mailto: amitdtu007@gmail.com" className="ml-5 ">
+              <a href="mailto: amitdtu007@gmail.com" className="mx-3">
                 <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
               </a>
             </span>

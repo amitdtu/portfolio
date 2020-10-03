@@ -32,7 +32,7 @@ class ContactMe extends Component {
     };
     try {
       const res = await emailjs.send(
-        "adkdalkl;aka;",
+        emailJS.serviceId,
         emailJS.templateId,
         templateParams,
         emailJS.userId
@@ -48,6 +48,7 @@ class ContactMe extends Component {
       if (err.status === 400)
         toast.error("Something went wrong. Please try again.");
       this.setState({ isLoading: false });
+      console.log(err);
     }
 
     // console.log(e.target);
