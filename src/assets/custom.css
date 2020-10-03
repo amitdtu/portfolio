@@ -184,22 +184,3 @@ html[data-theme="dark"] textarea::placeholder {
 .h-75 {
   height: 75vh !important;
 }
-
-/* tostify react */
-/* .Toastify__progress-bar--default {
-  background: #667eea !important;
-} */
-
-/* .Toastify__toast--default {
-  color: black;
-}
-
-.Toastify__toast-container {
-  min-width: 30vw !important;
-  max-width: 60vw !important;
-  width: unset !important;
-}
-
-.progress-danger .Toastify__progress-bar--default {
-  background: #e74c3c !important;
-} */
