@@ -102,7 +102,7 @@ class ContactMe extends Component {
                     required
                     value={name}
                     name="name"
-                    maxLength={30}
+                    maxLength={50}
                     onChange={this.handleInputChange}
                     className={`w-full  rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 ${
                       isDark ? "bg-black placeholder-white::placeholder" : ""
@@ -116,7 +116,7 @@ class ContactMe extends Component {
                     autoComplete="off"
                     required
                     value={email}
-                    maxLength={20}
+                    maxLength={50}
                     onChange={this.handleInputChange}
                     name="email"
                     className={`w-full  rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 ${
@@ -132,7 +132,7 @@ class ContactMe extends Component {
                     value={message}
                     onChange={this.handleInputChange}
                     name="message"
-                    maxLength={400}
+                    maxLength={500}
                     className={`w-full  rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block ${
                       isDark ? "bg-black placeholder-white::placeholder" : ""
                     }`}
