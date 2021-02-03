@@ -26,7 +26,7 @@ export const projects = [
   {
     companyName: "Covid-19 Tracker",
     type: "Personal",
-    url: "https://github.com/amitdtu/covid19-tacker",
+    url: "https://covid19-tracker-project-2020.herokuapp.com/",
     info:
       "A website build in lockdown to track codvid-19 cases across the world with Chart JS.",
     imageName: "coronavirus.svg",
